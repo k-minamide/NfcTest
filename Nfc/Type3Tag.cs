@@ -10,7 +10,7 @@ namespace NfcTest.Nfc
     {
         public virtual string idm { get; set; }
         public virtual string pmm { get; set; }
-        public virtual string sys { get; set; }
+        public virtual int sys { get; set; }
 
         public override string identifier { get => this.idm; set => this.idm = value; }
     }

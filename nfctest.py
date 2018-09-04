@@ -1,5 +1,6 @@
-import nfc
 import binascii
+import json
+import nfc
 
 def nfctagtodict(nfctag):
 
@@ -36,7 +37,7 @@ def nfctagtodict(nfctag):
 
 
 def connected(tag):
-    print(nfctagtodict(tag))
+    print(json.dumps(nfctagtodict(tag)))
 
 
 clf = nfc.ContactlessFrontend('usb')

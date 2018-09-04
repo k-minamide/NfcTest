@@ -16,5 +16,10 @@ namespace NfcTest
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var tag = Nfc.ReaderWriter.GetInformation();
+        }
     }
 }
